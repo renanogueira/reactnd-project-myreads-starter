@@ -1,14 +1,9 @@
 {
   "dependencies": {
     "prop-types": "^15.6.1",
-<<<<<<< HEAD
     "react": "^15.5.4",
     "react-dom": "^15.5.4",
     "react-router-dom": "^4.2.2"
-=======
-    "react": "^16.3.2",
-    "react-dom": "^16.3.2"
->>>>>>> 45c8f3d470663d9273d02b9871f0fabd97413762
   },
   "devDependencies": {
     "react-scripts": "1.1.4"
