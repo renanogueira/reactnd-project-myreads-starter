@@ -62,10 +62,10 @@ export default class BookSearch extends Component {
     const updatedList = [];
     Api.update(book, shelf)
       .then(books => {
-        Object.keys(books).forEach(shelf => {
+        Object.keys(books).map(shelf => {
           return books[shelf]
             .map(bookId => ({ id: bookId, shelf: shelf }))
-            .forEach(book => {
+            .map(book => {
               updatedList.push(book);
             });
         });
