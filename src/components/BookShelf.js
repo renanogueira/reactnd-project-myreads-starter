@@ -7,19 +7,19 @@ export default class BookShelf extends Component {
     const { books, onChange } = this.props;
 
     const filter = books => shelf => books.filter(b => b.shelf === shelf);
-    const filterBy = filter(books);
+    const filterShelf = filter(books);
     const shelves = [
       {
         name: "Currently Reading",
-        books: filterBy("currentlyReading")
+        books: filterShelf("currentlyReading")
       },
       {
         name: "Want To Read",
-        books: filterBy("wantToRead")
+        books: filterShelf("wantToRead")
       },
       {
         name: "Read",
-        books: filterBy("read")
+        books: filterShelf("read")
       }
     ];
 
